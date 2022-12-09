@@ -1,0 +1,20 @@
+<p><span id="angka"></span> <span id="ukuran"></span> <span id="tes"></span></p>
+
+<script type="text/javascript" charset="utf-8">
+  //pengacak dokumen
+function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]
+}
+let angka = Math.floor(Math.random() * 100) + 1;
+let ukuran = ["KB","MB","GB","TB","PB"];
+let documents = ["doc", "docx", "docm", "dot", "dotx", "dotm", "ppt", "pptx", "pps", "ppsx", "ppsm", "pptm", "potm", "pot", "xls", "xlsx", "xslsm", "xlt", "xltx", "xltm"];
+
+let angk = pickRandom(angka);
+let ukur = pickRandom(ukuran);
+let docs = pickRandom(documents);
+
+  document.getElementById('angka').innerHTML= angka;
+  document.getElementById('ukuran').innerHTML= ukur;
+  document.getElementById('tes').innerHTML= docs;
+</script>
+
